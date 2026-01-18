@@ -1,0 +1,11 @@
+<!-- templates/books/book_list.html -->
+<h1>Book Catalog</h1>
+
+<ul>
+  {% for book in books %}
+    <li>
+      {{ book.title }} - {{ book.price }}
+      <a href="{% url 'add_to_cart' book.id %}">Add to cart</a>
+    </li>
+  {% endfor %}
+</ul>
