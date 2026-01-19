@@ -76,6 +76,13 @@ WSGI_APPLICATION = 'monolith.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
+DATABASE_ENGINE = 'mysql' # 'postgresql_psycopg2',...
+DATABASE_NAME = 'bookstore' # Or path to database file...
+DATABASE_USER = 'baolinh' # Not used with sqlite3.
+DATABASE_PASSWORD = 'Baolinh56' # Not used with sqlite3.
+DATABASE_HOST = '' # Set to empty string for localhost....
+DATABASE_PORT = '' 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
